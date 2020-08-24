@@ -18,7 +18,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>114</width>
+      <width>130</width>
       <attribute>salience</attribute>
       <reverseOrder>false</reverseOrder>
       <useRowNumber>false</useRowNumber>
@@ -59,35 +59,20 @@
     </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>100</width>
       <header>Brand : Data_brand</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
-          <fieldValues>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>data_brand</field>
-              <value>data_brand</value>
-              <nature>7</nature>
-              <type>java.math.BigDecimal</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-          </fieldValues>
-          <variable>data</variable>
-        </org.drools.workbench.models.datamodel.rule.ActionUpdateField>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>159</width>
-          <header>Brand : Data_brand</header>
-          <varName>data_brand</varName>
-          <fieldType>java.math.BigDecimal</fieldType>
-          <factType>data</factType>
-          <factField>data_brand</factField>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <boundName>data</boundName>
+      <factField>data_brand</factField>
+      <type>BigDecimal</type>
+      <update>false</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -152,8 +137,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1274000435</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric>1274000435</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
