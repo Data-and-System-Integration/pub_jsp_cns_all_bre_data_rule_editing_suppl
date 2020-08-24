@@ -15,7 +15,7 @@ public class pub_cns_combined_flattened_bre implements java.io.Serializable {
 	
 	public pub_cns_combined_flattened_bre() {
 	}
-private java.util.Date data_mail_date = new Date();
+        private java.util.Date data_mail_date = new Date();
 		private String string_data_multi_choice_codes_26;
 		private String string_data_multi_choice_codes_25;
 		private String string_data_multi_choice_codes_24;
