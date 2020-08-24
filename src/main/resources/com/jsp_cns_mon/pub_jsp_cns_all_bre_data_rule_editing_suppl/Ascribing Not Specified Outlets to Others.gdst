@@ -59,35 +59,20 @@
     </Pattern52>
   </conditionPatterns>
   <actionCols>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+    <set-field-col52>
+      <typedDefaultValue>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>-1</width>
+      <width>227</width>
       <header>Outlet : Data_outlet</header>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.ActionUpdateField>
-          <fieldValues>
-            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-              <field>data_outlet</field>
-              <value>data_outlet</value>
-              <nature>7</nature>
-              <type>java.math.BigDecimal</type>
-            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
-          </fieldValues>
-          <variable>data</variable>
-        </org.drools.workbench.models.datamodel.rule.ActionUpdateField>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>210</width>
-          <header>Outlet : Data_outlet</header>
-          <varName>data_outlet</varName>
-          <fieldType>java.math.BigDecimal</fieldType>
-          <factType>data</factType>
-          <factField>data_outlet</factField>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <boundName>data</boundName>
+      <factField>data_outlet</factField>
+      <type>BigDecimal</type>
+      <update>false</update>
+    </set-field-col52>
   </actionCols>
   <auditLog>
     <filter class="org.drools.guvnor.client.modeldriven.dt52.auditlog.DecisionTableAuditLogFilter">
@@ -152,8 +137,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>1274001926</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric>1274001926</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_BIGDECIMAL</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
     </list>
