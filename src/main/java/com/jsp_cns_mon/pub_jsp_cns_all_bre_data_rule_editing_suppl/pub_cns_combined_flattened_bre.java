@@ -15,7 +15,7 @@ public class pub_cns_combined_flattened_bre implements java.io.Serializable {
 	
 	public pub_cns_combined_flattened_bre() {
 	}
-        private java.util.Date data_mail_date = new Date();
+		private java.util.Date data_mail_date = new Date();
 		private String string_data_multi_choice_codes_26;
 		private String string_data_multi_choice_codes_25;
 		private String string_data_multi_choice_codes_24;
@@ -373,7 +373,7 @@ public class pub_cns_combined_flattened_bre implements java.io.Serializable {
 		private java.util.List<java.math.BigDecimal> data_multi_choice_codes_112 = new ArrayList<java.math.BigDecimal>();
 		private java.util.List<java.math.BigDecimal> data_multi_choice_codes_111 = new ArrayList<java.math.BigDecimal>();
 		private java.util.List<java.math.BigDecimal> data_multi_choice_codes_110 = new ArrayList<java.math.BigDecimal>();
-		private java.util.List<java.math.BigDecimal> data_multi_choice_codes_11 = new ArrayList<java.math.BigDecimal>();
+		private java.util.List<String> data_multi_choice_codes_11  = new ArrayList<java.lang.String>();		
 		private java.util.List<java.math.BigDecimal> data_multi_choice_codes_109 = new ArrayList<java.math.BigDecimal>();
 		private java.util.List<java.math.BigDecimal> data_multi_choice_codes_108 = new ArrayList<java.math.BigDecimal>();
 		private java.util.List<java.math.BigDecimal> data_multi_choice_codes_107 = new ArrayList<java.math.BigDecimal>();
@@ -1872,6 +1872,7 @@ public class pub_cns_combined_flattened_bre implements java.io.Serializable {
 		private java.util.List<com.jsp_cns_mon.pub_jsp_cns_all_bre_data_rule_editing_suppl.panelist_user_defined_multi> panelist_user_defined_multi;
 		private java.util.List<java.util.List<java.lang.String>> listOfStringLists = new java.util.ArrayList<java.util.List<java.lang.String>>();
 		private java.util.List<java.util.List<java.math.BigDecimal>> listOfBigDecimalLists = new java.util.ArrayList<java.util.List<java.math.BigDecimal>>();
+		private java.lang.String panelist_extended_dml_flag;
 
 
 		public java.util.Date getData_mail_date() {
@@ -1973,8 +1974,8 @@ public class pub_cns_combined_flattened_bre implements java.io.Serializable {
 		public String getString_data_multi_choice_codes_11() {
 			return string_data_multi_choice_codes_11;
 		}
-		public void setString_data_multi_choice_codes_11(String string_data_multi_choice_codes_11) {
-			this.string_data_multi_choice_codes_11 = string_data_multi_choice_codes_11;
+		public void setString_data_multi_choice_codes_11(String drools_string_data_multi_choice_codes_11) {
+			this.string_data_multi_choice_codes_11 = drools_string_data_multi_choice_codes_11;
 		}
 		public String getString_data_multi_choice_codes_106() {
 			return string_data_multi_choice_codes_106;
@@ -4251,11 +4252,11 @@ public class pub_cns_combined_flattened_bre implements java.io.Serializable {
 			ifListContainsBigDecimalElements(data_multi_choice_codes_110);
 			this.data_multi_choice_codes_110.add(drools_data_multi_choice_codes_110);
 		}
-		public java.util.List<java.math.BigDecimal> getData_multi_choice_codes_11() {
+		public java.util.List<String> getData_multi_choice_codes_11() {
 			return data_multi_choice_codes_11;
 		}
-		public void setData_multi_choice_codes_11(java.math.BigDecimal drools_data_multi_choice_codes_11) {
-			ifListContainsBigDecimalElements(data_multi_choice_codes_11);
+		public void setData_multi_choice_codes_11(String drools_data_multi_choice_codes_11) {
+			ifListContainsStringElements(data_multi_choice_codes_11);
 			this.data_multi_choice_codes_11.add(drools_data_multi_choice_codes_11);
 		}
 		public java.util.List<java.math.BigDecimal> getData_multi_choice_codes_109() {
@@ -13431,6 +13432,12 @@ public class pub_cns_combined_flattened_bre implements java.io.Serializable {
 		}
 		public void setData_user_defined_fields_count(java.lang.Long data_user_defined_fields_count) {
 			this.data_user_defined_fields_count = data_user_defined_fields_count;
+		}
+		public java.lang.String getPanelist_extended_dml_flag() {
+			return panelist_extended_dml_flag;
+		}
+		public void setPanelist_extended_dml_flag(java.lang.String panelist_extended_dml_flag) {
+			this.panelist_extended_dml_flag = panelist_extended_dml_flag;
 		}
 		
 		public java.util.List<com.jsp_cns_mon.pub_jsp_cns_all_bre_data_rule_editing_suppl.data_bus_dim> getData_bus_dim()
